@@ -1,3 +1,10 @@
+""" Part 2:
+'What is the purpose of the person_pet table?'
+
+The purpose of the person_pet table is to cross references the person table with the pet
+table. A table like this can be used when there is a many-to-many relationship between tables.
+"""
+
 import sqlite3
 
 conn = sqlite3.connect('pets.db')
@@ -47,10 +54,3 @@ if __name__ == "__main__":
 
     conn.commit()
     conn.close()
-
-""" Part 2:
-'What is the purpose of the person_pet table?'
-
-The purpose of the person_pet table is to cross references the person table with the pet
-table. A table like this can be used when there is a many-to-many relationship between tables.
-"""
